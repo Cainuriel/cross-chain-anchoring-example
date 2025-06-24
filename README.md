@@ -164,7 +164,7 @@ Amoy, BSCTestnet y Alastria
 
 ## 🔄 Roadmap
 
-- [ ] Soporte para más redes (BSC, Avalanche, Arbitrum)
+- [ ] Soporte para más redes (ISBE, Avalanche, Arbitrum)
 - [ ] Sistema de alertas por email/Slack
 - [ ] API GraphQL para consultas complejas
 - [ ] SDK para integración con otras aplicaciones
