@@ -410,11 +410,11 @@
         // Actualizar barra de estado
         function updateStatusBar(health, dashboard) {
             document.getElementById('totalAnchors').textContent = 
-                dashboard.contracts?.sepolia?.totalAnchors || '0';
+                dashboard.contracts?.alastria?.totalAnchors || '0';
             
-            const sepoliaAnchors = parseInt(dashboard.contracts?.sepolia?.totalAnchors) || 0;
-            const mumbaiAnchors = parseInt(dashboard.contracts?.mumbai?.totalAnchors) || 0;
-            const totalAnchors = sepoliaAnchors + mumbaiAnchors;
+            const alastriaAnchors = parseInt(dashboard.contracts?.alastria?.totalAnchors) || 0;
+            const amoyAnchors = parseInt(dashboard.contracts?.amoy?.totalAnchors) || 0;
+            const totalAnchors = alastriaAnchors + amoyAnchors;
             
             document.getElementById('successRate').textContent = totalAnchors > 0 ? '95%' : '0%';
             document.getElementById('uptime').textContent = calculateUptime(health.timestamp);
@@ -476,17 +476,17 @@
         // Actualizar bloques anclados recientes
         async function updateRecentAnchors() {
             try {
-                const sepoliaAnchors = await fetch(`${API_BASE}/api/contract/sepolia/anchored-blocks?count=3`)
+                const alastriaAnchors = await fetch(`${API_BASE}/api/contract/alastria/anchored-blocks?count=3`)
                     .then(r => r.json()).catch(() => []);
-                const mumbaiAnchors = await fetch(`${API_BASE}/api/contract/mumbai/anchored-blocks?count=3`)
+                const amoyAnchors = await fetch(`${API_BASE}/api/contract/amoy/anchored-blocks?count=3`)
                     .then(r => r.json()).catch(() => []);
                 
                 const container = document.getElementById('recentAnchors');
                 container.innerHTML = '';
                 
                 const allAnchors = [
-                    ...sepoliaAnchors.map(a => ({...a, contract: 'Sepolia'})),
-                    ...mumbaiAnchors.map(a => ({...a, contract: 'Mumbai'}))
+                    ...alastriaAnchors.map(a => ({...a, contract: 'alastria'})),
+                    ...amoyAnchors.map(a => ({...a, contract: 'amoy'}))
                 ].sort((a, b) => b.timestamp - a.timestamp).slice(0, 5);
                 
                 if (allAnchors.length === 0) {
@@ -524,7 +524,7 @@
             try {
                 showNotification('Iniciando anclaje manual...', 'info');
                 
-                const response = await fetch(`${API_BASE}/api/anchor/sepolia/mumbai`, {
+                const response = await fetch(`${API_BASE}/api/anchor/alastria/amoy`, {
                     method: 'POST'
                 });
                 
@@ -545,8 +545,8 @@
             try {
                 const endpoint = isAutomationRunning ? '/api/automation/stop' : '/api/automation/start';
                 const body = isAutomationRunning ? {} : {
-                    network1: 'sepolia',
-                    network2: 'mumbai',
+                    network1: 'alastria',
+                    network2: 'amoy',
                     interval: document.getElementById('cronInterval').value
                 };
                 
