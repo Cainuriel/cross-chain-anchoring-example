@@ -1,0 +1,142 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "Cross-Chain API Tests",
+  "collectionId": "cross-chain-api",
+  "dateExported": "2025-06-24T21:20:00.000Z",
+  "version": "1.2",
+  "folders": [],
+  "requests": [
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "🟢 Health Check",
+      "url": "http://localhost:3000/health",
+      "method": "GET",
+      "sortNum": 10000,
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "🌐 Networks Info",
+      "url": "http://localhost:3000/api/networks",
+      "method": "GET",
+      "sortNum": 20000,
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "📦 Latest Block",
+      "url": "http://localhost:3000/api/block/alastria/latest",
+      "method": "GET",
+      "sortNum": 30000,
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "📈 Contract Stats",
+      "url": "http://localhost:3000/api/contract/alastria/stats",
+      "method": "GET",
+      "sortNum": 40000,
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "⚓ Manual Anchor",
+      "url": "http://localhost:3000/api/anchor/amoy/alastria",
+      "method": "POST",
+      "sortNum": 50000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "tests": []    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "📊 Automation Status",
+      "url": "http://localhost:3000/api/automation/status",
+      "method": "GET",
+      "sortNum": 60000,
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "▶️ Start Automation",
+      "url": "http://localhost:3000/api/automation/start",
+      "method": "POST",
+      "sortNum": 61000,
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "params": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"network1\": \"alastria\",\n  \"network2\": \"amoy\",\n  \"interval\": \"*/5 * * * *\"\n}",
+        "form": []
+      },
+      "tests": []    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "⏹️ Stop Automation",
+      "url": "http://localhost:3000/api/automation/stop",
+      "method": "POST",
+      "sortNum": 62000,
+      "headers": [],
+      "params": [],
+      "tests": []
+    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "📚 Anchoring History",
+      "url": "http://localhost:3000/api/anchoring-history/alastria",
+      "method": "GET",
+      "sortNum": 63000,
+      "headers": [],
+      "params": [
+        {
+          "name": "limit",
+          "value": "10"
+        },
+        {
+          "name": "offset",
+          "value": "0"
+        }
+      ],
+      "tests": []
+    },
+    {
+      "colId": "cross-chain-api",
+      "containerId": "",
+      "name": "📊 System Metrics",
+      "url": "http://localhost:3000/api/metrics",
+      "method": "GET",
+      "sortNum": 64000,
+      "headers": [],
+      "params": [],
+      "tests": []
+    }
+  ]
+}

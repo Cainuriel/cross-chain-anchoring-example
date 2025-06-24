@@ -1,0 +1,9 @@
+{
+  "network": "Amoy",
+  "chainId": "80002",
+  "contractAddress": "0x4F4F646F0f49E2B461EaC86b327c20e19a3db9e2",
+  "anchoredChain": "Alastria",
+  "deployer": "0x717E34E5019AebE1A596Fd3cB1c1119aD6fD8B69",
+  "deploymentTime": "2025-06-24T20:39:55.304Z",
+  "transactionHash": "0x10df768fe1c63d64cbe42ebc862fd5e8bcd8a66c7db3672079ab8e60c309d509"
+}

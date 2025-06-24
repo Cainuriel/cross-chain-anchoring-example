@@ -1,0 +1,32 @@
+{
+  "Alastria-2020": [
+    {
+      "contractAddress": "0x8F56B20297CC11477A7fAc1392b49a966DFF717F",
+      "deploymentTime": "2025-06-24T20:38:10.803Z",
+      "transactionHash": "0x57322777758d6f908e012c679f7f73c94497de64af94e3702859d02c117930fe",
+      "deployer": "0x717E34E5019AebE1A596Fd3cB1c1119aD6fD8B69",
+      "anchoredChain": "Amoy",
+      "fileName": "Alastria-2020-2025-06-24T20-38-10-856Z.json"
+    }
+  ],
+  "BSC Testnet-97": [
+    {
+      "contractAddress": "0x8F56B20297CC11477A7fAc1392b49a966DFF717F",
+      "deploymentTime": "2025-06-24T20:38:29.493Z",
+      "transactionHash": "0xc9f31fc53c1db0d2172e8b98b3d287f14c6f606cbbf72cb9f83fd3b95477746f",
+      "deployer": "0x717E34E5019AebE1A596Fd3cB1c1119aD6fD8B69",
+      "anchoredChain": "Alastria",
+      "fileName": "BSC Testnet-97-2025-06-24T20-38-29-633Z.json"
+    }
+  ],
+  "Amoy-80002": [
+    {
+      "contractAddress": "0x4F4F646F0f49E2B461EaC86b327c20e19a3db9e2",
+      "deploymentTime": "2025-06-24T20:39:55.304Z",
+      "transactionHash": "0x10df768fe1c63d64cbe42ebc862fd5e8bcd8a66c7db3672079ab8e60c309d509",
+      "deployer": "0x717E34E5019AebE1A596Fd3cB1c1119aD6fD8B69",
+      "anchoredChain": "Alastria",
+      "fileName": "Amoy-80002-2025-06-24T20-39-55-422Z.json"
+    }
+  ]
+}
