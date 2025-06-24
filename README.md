@@ -177,7 +177,6 @@ Amoy, BSCTestnet y Alastria
 - `test-automation.ps1` - Testing específico de automatización
 - `test-api.ps1` - Testing general de todos los endpoints
 - `POWERSHELL_GUIDE.md` - Guía detallada de comandos PowerShell
-- `AUTOMATION_FIX.md` - Documentación de la corrección de endpoints
 
 ## 📄 Licencia
 
