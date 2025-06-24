@@ -148,12 +148,6 @@ Crear un registro inmutable de eventos entre blockchains para auditorías y comp
 ### **Interoperabilidad**
 Base para construir puentes y aplicaciones que operen en múltiples redes simultáneamente.
 
-## 🔐 Seguridad
-
-- Contratos auditados con OpenZeppelin
-- Validación de firmas y hashes de bloques
-- Control de acceso con roles (owner-only para anclaje)
-- Manejo seguro de claves privadas
 
 ## 🌐 Redes Soportadas
 
