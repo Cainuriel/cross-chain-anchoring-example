@@ -192,5 +192,3 @@ npm run compile
 # Reiniciar API
 Ctrl+C → npm run dev
 ```
-
-¡Feliz testing! 🚀

@@ -9,7 +9,7 @@
         "version": "0.8.28",
         "settings": {
           "optimizer": {
-            "enabled": true,
+            "enabled": false,
             "runs": 10
           },
           "evmVersion": "berlin",
@@ -26,6 +26,9 @@
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": false
           }
         }
       },
